@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IITM|MENU|ATTENDANCE</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+  <header>
+    <img src="Pics/IITM logo.jpg">
+
+</header>       
+    <nav>
+      <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="index.html">Home</a>
+            <a href="Attendance.html">Attendance</a>
+            <a href="Time-table.html">Time Table</a>
+            <a href="Assignments.html">Assignments</a>
+            <a href="Syllabus.html">Syllabus</a>
+            <a href="Quiz.html">Quiz</a>
+            <a href="Result.html">Result</a>
+            <a href="Books.html">Books</a>
+            <a href="Videos.html">Videos</a>
+            <a href="Fee.html">Fee Structure</a>
+            <a href="Practicals.html">Practicals</a>
+                
+    </div>
+          
+    <div id="main">
+            <button class="openbtn" onclick="openNav()" style="float: left;">☰ MENU</button>  
+    </div>
+          
+           
+    <div class="btn-group" style="float: right;">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-id-card-o" ></i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a href="Log-in.html"><button class="dropdown-item" type="button">Log-in</button></a>
+              <a href ="Sign-up.html"><button class="dropdown-item" type="button">Sign-up</button></a>
+            </div>
+    </div>
+
+    <div id="myOverlay" class="overlay">
+      <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+      <div class="overlay-content">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+    <button class="openBtn" onclick="openSearch()">Search</button>
+  </nav>
+          
+    <br>
+    <br> 
+
+<h1>BTECH Attendance</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th class="name-col">Student Name</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      <th>7</th>
+      <th>8</th>
+      <th>9</th>
+      <th>10</th>
+      <th>11</th>
+      <th>12</th>
+      <th class="missed-col">Days Missed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="student">
+      <td class="name-col">Abhi</td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="missed-col">0</td>
+    </tr>
+    <tr class="student">
+      <td class="name-col">Chirag</td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="missed-col">0</td>
+    </tr>
+    <tr class="student">
+      <td class="name-col">Pooja</td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="missed-col">0</td>
+    </tr>
+    <tr class="student">
+      <td class="name-col">Rishant</td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="missed-col">0</td>
+    </tr>
+    <tr class="student">
+      <td class="name-col">Rajesh</td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="attend-col"><input type="checkbox"></td>
+      <td class="missed-col">0</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="bottom-menu">    
+  
+    <footer>
+    <br>
+      <h2>
+          Contact us:
+      </h2>
+  
+    </footer>
+    <nav> 
+      <a href="#" class= "insta-handle"><i class="fa fa-instagram fa-lg insta-handle" ></i>|Instagram|</a>
+      <a href="#" class="fb-handle"><i class="fa fa-facebook fa-lg fb-handle" ></i>|Facebook|</a>
+      <br>
+      <br>
+      <a href="#" class="tw-handle"><i class="fa fa-twitter fa-lg tw-handle" ></i>|Twitter|</a>
+      <a href="#" class="ld-handle"><i class="fa fa-linkedin fa-lg ld-handle" ></i> |Linkdin|</a>
+    </nav>
+
+  <footer>
+    <h6><b> @POWERED BY TEAM ERP </b></h6>
+  </footer>
+</div>
+ 
+
+
+
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+                 
+
+<script>
+            function openNav() {
+              document.getElementById("mySidebar").style.width = "250px";
+              document.getElementById("main").style.marginLeft = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidebar").style.width = "0";
+              document.getElementById("main").style.marginLeft= "0";
+            }
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+      function openSearch() {
+        document.getElementById("myOverlay").style.display = "block";
+      }
+      
+      function closeSearch() {
+        document.getElementById("myOverlay").style.display = "none";
+      }
+      </script>
+<script>
+    (function() {
+    if (!localStorage.attendance) {
+        console.log('Creating attendance records...');
+        function getRandom() {
+            return (Math.random() >= 0.5);
+        }
+
+        var nameColumns = $('tbody .name-col'),
+            attendance = {};
+
+        nameColumns.each(function() {
+            var name = this.innerText;
+            attendance[name] = [];
+
+            for (var i = 0; i <= 11; i++) {
+                attendance[name].push(getRandom());
+            }
+        });
+
+        localStorage.attendance = JSON.stringify(attendance);
+    }
+}());
+
+
+/* STUDENT APPLICATION */
+$(function() {
+    var attendance = JSON.parse(localStorage.attendance),
+        $allMissed = $('tbody .missed-col'),
+        $allCheckboxes = $('tbody input');
+
+    // Count a student's missed days
+    function countMissing() {
+        $allMissed.each(function() {
+            var studentRow = $(this).parent('tr'),
+                dayChecks = $(studentRow).children('td').children('input'),
+                numMissed = 0;
+
+            dayChecks.each(function() {
+                if (!$(this).prop('checked')) {
+                    numMissed++;
+                }
+            });
+
+            $(this).text(numMissed);
+        });
+    }
+
+    // Check boxes, based on attendace records
+    $.each(attendance, function(name, days) {
+        var studentRow = $('tbody .name-col:contains("' + name + '")').parent('tr'),
+            dayChecks = $(studentRow).children('.attend-col').children('input');
+
+        dayChecks.each(function(i) {
+            $(this).prop('checked', days[i]);
+        });
+    });
+
+    // When a checkbox is clicked, update localStorage
+    $allCheckboxes.on('click', function() {
+        var studentRows = $('tbody .student'),
+            newAttendance = {};
+
+        studentRows.each(function() {
+            var name = $(this).children('.name-col').text(),
+                $allCheckboxes = $(this).children('td').children('input');
+
+            newAttendance[name] = [];
+
+            $allCheckboxes.each(function() {
+                newAttendance[name].push($(this).prop('checked'));
+            });
+        });
+
+        countMissing();
+        localStorage.attendance = JSON.stringify(newAttendance);
+    });
+
+    countMissing();
+}());
+</script>
+</body>
+</html>
